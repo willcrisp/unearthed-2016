@@ -40,6 +40,9 @@ public class VesselOptimizationView extends HBox{
             }
             }
         });
+
+
+
         this.getChildren().addAll(leftBox, deckView);
     }
 

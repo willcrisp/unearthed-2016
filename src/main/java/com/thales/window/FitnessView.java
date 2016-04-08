@@ -26,6 +26,8 @@ public class FitnessView extends Pane {
     initGraph();
     prepareTimeline();
 
+    this.setStyle("-fx-background-color: #CCFF99;");
+
   }
   //-- Timeline gets called in the JavaFX Main thread
   private void prepareTimeline() {
