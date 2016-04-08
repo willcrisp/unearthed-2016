@@ -1,5 +1,6 @@
 package com.thales.window;
 
+import com.thales.window.deckView.DeckView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -10,7 +11,7 @@ import javafx.scene.layout.VBox;
 public class VesselOptimizationView extends HBox{
 
     //TODO
-    final Pane deckView = new Pane();
+    final Pane deckView = new DeckView();
 
     final Pane generationView = new Pane();
 
