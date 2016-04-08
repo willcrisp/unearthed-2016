@@ -21,7 +21,7 @@ public class MainWindow extends Application {
     {
         primaryStage.setTitle("APP");
 
-        Scene scene = new Scene(mainPane, 1280, 800);
+        Scene scene = new Scene(mainPane, 1280, 800, true);
 
         mainPane.getChildren().add(new VesselOptimizationView());
         primaryStage.setScene(scene);
