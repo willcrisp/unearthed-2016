@@ -1,5 +1,5 @@
 package com.thales;
 
-public class Material {
+public class Item {
 
 }
