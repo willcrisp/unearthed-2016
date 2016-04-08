@@ -1,4 +1,4 @@
-package com.thales;
+package com.thales.model;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

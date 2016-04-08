@@ -1,4 +1,4 @@
-package com.thales;
+package com.thales.model;
 
 import java.util.ArrayList;
 import java.util.Collections;

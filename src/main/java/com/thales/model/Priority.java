@@ -1,4 +1,4 @@
-package com.thales;
+package com.thales.model;
 
 public enum Priority {
 
