@@ -4,14 +4,10 @@ import javafx.scene.DepthTest;
 import javafx.scene.Group;
 import javafx.scene.PerspectiveCamera;
 import javafx.scene.SubScene;
-import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Box;
-import javafx.scene.shape.Sphere;
-
-import java.util.logging.XMLFormatter;
 
 /**
  * Created by Administrator on 8/04/2016.
@@ -40,11 +36,14 @@ public class DeckView extends Pane
 
     final Xform axis = new Axis(1000);
 
+    final VesselView vesselView = new VesselView();
+
     public DeckView()
     {
 
 
-    world.getChildren().add(axis);
+        world.getChildren().add(axis);
+        world.getChildren().add(vesselView);
 
         buildCamera();
 
