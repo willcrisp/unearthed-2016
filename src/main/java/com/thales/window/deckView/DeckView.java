@@ -15,9 +15,11 @@ import javafx.scene.shape.Box;
 public class DeckView extends Pane
 {
 
-    private static final double CAMERA_INITIAL_DISTANCE = -450;
+    private static final double CAMERA_INITIAL_DISTANCE = -600;
     private static final double CAMERA_INITIAL_X_ANGLE = 0;
     private static final double CAMERA_INITIAL_Y_ANGLE = 0;
+    private static final double CAMERA_INITIAL_Z_ANGLE = 90;
+
     private static final double CAMERA_NEAR_CLIP = 0.1;
     private static final double CAMERA_FAR_CLIP = 10000.0;
 
@@ -38,8 +40,11 @@ public class DeckView extends Pane
 
     final VesselView vesselView = new VesselView();
 
+    final Xform grid = new Grid(1000, 1000, 10, 10);
+
     public DeckView()
     {
+        world.getChildren().addAll(axis, grid);
 
 
         world.getChildren().add(axis);
@@ -93,7 +98,11 @@ public class DeckView extends Pane
         camera.setNearClip(CAMERA_NEAR_CLIP);
         camera.setFarClip(CAMERA_FAR_CLIP);
         camera.setTranslateZ(CAMERA_INITIAL_DISTANCE);
+
+
         cameraXform.ry.setAngle(CAMERA_INITIAL_Y_ANGLE);
         cameraXform.rx.setAngle(CAMERA_INITIAL_X_ANGLE);
+        cameraXform.rz.setAngle(CAMERA_INITIAL_Z_ANGLE);
+
     }
 }
